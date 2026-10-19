@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;font-family:'Plus Jakarta Sans',sans-serif;background-color:#080d1b;color:#ffffff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        background: "#080d1b",
+        "surface-dark": "#0d1527",
+        "surface-card": "#111b33",
+        "surface-card-hover": "#162342",
+        "surface-border": "#1e2e54",
+        "border-glow": "#243763",
+        primary: "#25d366",
+        "primary-glow": "#4ade80",
+        "emerald-accent": "#2ecc71",
+        "btn-dark": "#0a0d14",
+        "on-surface": "#ffffff",
+        "on-surface-muted": "#94a3b8"
+      },
+      borderRadius: {
+        DEFAULT: "0.25rem",
+        lg: "0.5rem",
+        xl: "0.75rem",
+        "2xl": "1rem",
+        full: "9999px"
+      },
+      spacing: {
+        "margin-mobile": "1rem",
+        "space-xs": "0.25rem",
+        "space-sm": "0.5rem",
+        "space-md": "1rem",
+        "space-lg": "1.5rem"
+      }
+    }
+  }
+};
+</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-[#080d1b] text-white antialiased flex flex-col min-h-screen">
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 pt-safe bg-[#080d1b]/90 backdrop-blur-xl border-b border-surface-border/60 shadow-lg shadow-black/40">
+<div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2.5">
+<img alt="Active Lingua Logo" class="w-10 h-10 object-contain rounded-full border border-surface-border bg-surface-dark shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO5Ixgf06RSyWiuvSNPy8EXRIwHCBqb0cwQ2GPrZi_KrQw0F8ffhesHVtoO-cCxeI9gIb40EGbmxgvTE0wuKX2H5FzH59Dw7p7TiPF6X1LLZDBgVIwZ4W9OGxTuWoQdNqTidkEK8hc734yLcrNrTF1CUIBVKCHJ-OEkaZwuxTh9TmGlRPhYuTB7s1iHd2zF8qSWyUIfISePamTCOXKxA-Sj7avQ1lnNT_1vnpdcLcwC7cXLEc4UlRdRDuvyWk2yrBJ"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="text-[17px] leading-tight text-white font-extrabold tracking-tight">ACTIVE LINGUA</span>
+<span class="w-2 h-2 rounded-full bg-[#25d366] shadow-[0_0_8px_#25d366] animate-pulse"></span>
+</div>
+<span class="text-[10px] text-[#25d366] tracking-widest font-bold uppercase">Campus Bucerías • Nayarit</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<a aria-label="WhatsApp Bucerías 322 351 2797" class="min-w-[44px] min-h-[44px] h-11 px-3.5 rounded-full bg-[#0d1527] border border-[#25d366]/40 text-[#25d366] hover:bg-[#25d366]/10 flex items-center justify-center gap-1.5 transition-all active:scale-95 shadow-sm" href="https://wa.me/523223512797?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Active%20Lingua%20Bucer%C3%ADas" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span class="text-[11px] font-bold">WhatsApp</span>
+</a>
+</div>
+</div>
+</header>
+<main class="flex flex-col relative w-full pt-16 pb-28 bg-[#080d1b]">
+<div class="flex flex-col w-full">
+<!-- Brand Statement / Hero Zone -->
+<section class="px-margin-mobile pt-space-md pb- space-lg flex flex-col items-start relative overflow-hidden"><div class="flex flex-wrap items-center gap-2 mb-3">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#111b33] border border-surface-border text-white text-[11px] font-bold shadow-sm">
+<span class="text-[13px] leading-none">🌴</span>
+<span class="tracking-widest uppercase">ACTIVE LINGUA BUCERÍAS</span>
+</div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#25d366]/15 text-[#25d366] text-[11px] font-extrabold border border-[#25d366]/30 animate-pulse">
+<span class="material-symbols-outlined text-[14px]">local_offer</span>
+<span>CUPÓN BUCERIAS ACTIVO</span>
+</div>
+</div>
+<div class="w-full mb-3">
+<span class="text-[12px] uppercase tracking-wider text-[#25d366] font-extrabold block mb-1">Método Acelerado Garantizado</span>
+<h1 class="text-[32px] font-extrabold leading-[38px] text-white tracking-tight mb-2">
+    ¿Decidido a aprender inglés?
+  </h1>
+<div class="p-3.5 rounded-2xl bg-[#0d1527] border border-[#25d366]/30 mb-3 shadow-md">
+<p class="text-[14px] leading-relaxed text-slate-200">
+      En <strong class="text-[#25d366] font-bold">Active Lingua</strong> es conversacional, práctico y diferente. <strong class="text-white font-semibold">Sin tareas, sin exámenes, 100% práctica.</strong> Tú escoges tu horario y puede ser presencial, online o in-company.
+    </p>
+<div class="flex flex-wrap gap-1.5 mt-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#111b33] border border-surface-border text-white text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[14px] text-[#25d366]">check_circle</span>
+        Sin tareas ni exámenes
+      </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#111b33] border border-[#25d366]/40 text-[#25d366] text-[11px] font-bold">
+<span class="material-symbols-outlined text-[14px]">forum</span>
+        100% práctica conversacional
+      </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#111b33] border border-surface-border text-white text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[14px] text-[#25d366]">schedule</span>
+        Tú eliges tu horario
+      </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#111b33] border border-surface-border text-slate-200 text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[14px] text-[#25d366]">hub</span>
+        Presencial • Online • In-Company
+      </span>
+</div>
+</div>
+<div class="flex items-center gap-2 px-1 text-slate-300 text-[13px] mb-1">
+<span class="text-[18px]">🔥</span>
+<span>¡Aprovecha hoy el <strong class="text-[#25d366] font-bold">2x1 en la inscripción</strong> en Campus Bucerías! Certificado <strong class="text-white font-bold">B2 en 12 meses</strong>.</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 w-full mb-2">
+<div class="bg-[#111b33] p-2.5 rounded-xl flex flex-col items-center text-center shadow-md border border-surface-border">
+<span class="text-[22px] font-extrabold text-white leading-none">4m</span>
+<span class="text-[10px] font-semibold text-slate-300 mt-1 leading-tight uppercase">Habla<br/><span class="text-[#25d366]">Fluido</span></span>
+</div>
+<div class="bg-[#111b33] p-2.5 rounded-xl flex flex-col items-center text-center shadow-md border border-surface-border">
+<span class="text-[22px] font-extrabold text-[#25d366] leading-none">B2</span>
+<span class="text-[10px] font-semibold text-slate-300 mt-1 leading-tight uppercase">Certificado<br/><span class="text-white">Oficial</span></span>
+</div>
+<div class="bg-[#111b33] p-2.5 rounded-xl flex flex-col items-center text-center shadow-md border border-surface-border">
+<span class="material-symbols-outlined text-[#25d366] text-[22px]">local_fire_department</span>
+<span class="text-[10px] font-semibold text-slate-300 mt-1 leading-tight uppercase">2x1<br/><span class="text-[#25d366]">Inscripción</span></span>
+</div>
+</div></section>
+<!-- Interactive Visual Showcase Image -->
+<section class="px-margin-mobile mb-6">
+<div class="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-surface-border bg-surface-card">
+<img alt="Póster Oficial Active Lingua Bucerías con Iggie la Iguana" class="w-full h-auto object-cover max-h-[460px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4TTGRkeerOn1EhihZ80xRN7_jNlI2syr8lDMMywxPjLotINXi3vBjOWUJRkIb8mZBovDfAHrUCgNA_LxRV2MSd4z8C6DgKudMPAln-gk7bo7V1ShyNdYOy2yvykZgXS6jtFB6_csUgxGBUgfkDdc_ubWYzQQH6BiIWprcDh0X0Xba5kI5IUwDVhD1LIrVojDV9WirtAvnjBsHxnzfb1x9xvP8MaWet9IzhXgM65tf8ECBx3wz8qwmvaNoFkAGUUyG"/>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#080d1b] via-[#080d1b]/80 to-transparent p-3.5 flex items-center justify-between text-white">
+<div class="flex items-center gap-2">
+<span class="flex h-2.5 w-2.5 rounded-full bg-[#25d366] animate-ping"></span>
+<p class="text-[12px] font-bold text-white">Campus Bucerías • Tel. 322 351 2797</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-[#0a0d14] text-[#25d366] border border-[#25d366]/40 text-[10px] font-extrabold uppercase tracking-wider">Cupo Limitado</span>
+</div>
+</div>
+</section>
+<!-- Section Header & Interactive Modality Switcher -->
+<section class="px-margin-mobile mb-4 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-[11px] text-[#25d366] tracking-wider uppercase font-extrabold">Catálogo Oficial de Precios</span>
+<h2 class="text-[20px] text-white font-bold tracking-tight">Pague Aquí • Inscripciones</h2>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-[#25d366]/15 border border-[#25d366]/30 text-[#25d366] text-[10px] font-extrabold tracking-wider">MSI DISPONIBLES</span>
+</div>
+<!-- Modality Segmented Toggle -->
+<div class="w-full bg-[#0d1527] p-1 rounded-full flex items-center border border-surface-border shadow-inner" id="modalitySwitcher">
+<button class="flex-1 py-2 px-3 rounded-full flex items-center justify-center gap-1.5 transition-all bg-[#111b33] text-white font-bold text-[13px] border border-[#25d366]/30 shadow-sm" id="tabPresencial" onclick="switchModality('presencial')" type="button">
+<span class="material-symbols-outlined text-[18px] text-[#25d366]">apartment</span>
+<span>Presencial</span>
+</button>
+<button class="flex-1 py-2 px-3 rounded-full flex items-center justify-center gap-1.5 transition-all text-slate-400 font-bold text-[13px]" id="tabOnline" onclick="switchModality('online')" type="button">
+<span class="material-symbols-outlined text-[18px]">laptop_mac</span>
+<span>Online</span>
+</button>
+</div>
+</section>
+<!-- Content Container: Presencial vs Online Tiers -->
+<div class="px-margin-mobile flex flex-col gap-4 mb-8">
+<!-- ==================== PRESENCIAL PANEL ==================== -->
+<div class="flex flex-col gap-4" id="panelPresencial">
+<!-- Plan 1: Inscripción Única -->
+<article class="bg-[#111b33] rounded-2xl p-4 shadow-lg border border-surface-border flex flex-col">
+<div class="flex items-start justify-between mb-2">
+<div>
+<span class="text-[11px] text-[#25d366] font-bold uppercase tracking-wider">Paso Inicial Bucerías</span>
+<h3 class="text-[18px] text-white font-bold">Inscripción Única</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-[#25d366]/15 border border-[#25d366]/30 text-[#25d366] text-[10px] font-extrabold">CUPÓN ACTIVO</span>
+</div>
+<p class="text-[13px] text-slate-300 mb-3">Asegura tu vacante y material oficial en campus físico o modalidad híbrida.</p>
+<div class="flex items-baseline gap-1.5 my-1">
+<span class="text-[32px] text-white font-extrabold tracking-tight">$2,990</span>
+<span class="text-[12px] text-slate-400">MXN pago único</span>
+</div>
+<div class="flex items-center gap-1.5 text-white bg-[#0d1527] border border-surface-border px-3 py-2 rounded-lg mb-4">
+<span class="material-symbols-outlined text-[18px] text-[#25d366]">credit_card</span>
+<span class="text-[12px] font-medium">Hasta 12 Meses Sin Intereses disponibles</span>
+</div>
+<a class="w-full py-3.5 px-4 rounded-xl bg-[#0a0d14] text-white hover:bg-black border border-white/20 hover:border-[#25d366]/60 transition-all text-[13px] uppercase tracking-wide flex items-center justify-center gap-2 shadow-lg font-bold" href="https://mpago.li/2845CGB" rel="noopener noreferrer" target="_blank">
+<span>Pagar Inscripción ($2,990 MXN)</span>
+<span class="material-symbols-outlined text-[18px] text-[#25d366]">open_in_new</span>
+</a>
+</article>
+<!-- Plan 3: Contado 1 Persona Presencial -->
+<article class="bg-[#111b33] rounded-2xl p-4 shadow-lg border border-surface-border flex flex-col relative overflow-hidden">
+<div class="flex items-start justify-between mb-2">
+<div>
+<span class="text-[11px] text-[#25d366] font-bold uppercase tracking-wider">Pago Único • Cero Cargos Extra</span>
+<h3 class="text-[18px] text-white font-bold">Contado - 1 Persona Presencial</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-[#25d366]/20 border border-[#25d366]/40 text-[#25d366] text-[10px] font-extrabold">AHORRA $3,310</span>
+</div>
+<div class="flex items-baseline gap-1.5 my-1">
+<span class="text-[32px] text-white font-extrabold tracking-tight">$21,390</span>
+<span class="text-[12px] text-slate-400">MXN total</span>
+</div>
+<div class="flex items-center gap-1.5 text-white bg-[#0d1527] border border-surface-border px-3 py-2 rounded-lg mb-4">
+<span class="material-symbols-outlined text-[18px] text-[#25d366]">credit_card</span>
+<span class="text-[12px] font-medium">O a 12 meses sin intereses de <strong class="text-[#25d366]">$1,782.50/mes</strong></span>
+</div>
+<a class="w-full py-3.5 px-4 rounded-xl bg-[#0a0d14] text-white hover:bg-black border border-white/20 hover:border-[#25d366]/60 transition-all text-[13px] uppercase tracking-wide flex items-center justify-center gap-2 shadow-lg font-bold" href="https://mpago.li/2cjGESr" rel="noopener noreferrer" target="_blank">
+<span>Pagar Contado 1 Persona ($21,390 MXN)</span>
+<span class="material-symbols-outlined text-[18px] text-[#25d366]">open_in_new</span>
+</a>
+</article>
+<!-- Plan 4: Promoción 2x1 Contado Estrella -->
+<article class="bg-[#111b33] rounded-2xl p-4 shadow-xl flex flex-col relative overflow-hidden border-2 border-[#25d366] shadow-[0_0_20px_rgba(37,211,102,0.15)]">
+<div class="absolute top-0 right-0 bg-[#25d366] text-[#080d1b] px-3 py-1 rounded-bl-xl text-[10px] font-extrabold tracking-wider uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+            PROMO ESTRELLA • 2X1
+          </div>
+<div class="mt-2 mb-1">
+<span class="inline-block px-2 py-0.5 rounded bg-[#25d366]/20 text-[#25d366] border border-[#25d366]/30 text-[10px] font-extrabold mb-1">
+              AHORRO DEL 35% POR ALUMNO • BUCERÍAS
+            </span>
+<h3 class="text-[20px] text-white font-extrabold">Promoción 2x1 de Contado</h3>
+<p class="text-[13px] text-slate-300">Entrena con quien quieras. Inscripción y ciclo completo para 2 personas.</p>
+</div>
+<div class="flex items-baseline gap-1.5 my-2">
+<span class="text-[34px] text-[#25d366] font-extrabold tracking-tight">$27,500</span>
+<span class="text-[12px] text-slate-400">MXN (2 alumnos)</span>
+</div>
+<div class="bg-[#0d1527] rounded-xl p-3 mb-4 flex flex-col gap-1 border border-surface-border">
+<div class="flex items-center gap-1.5 text-white text-[12px]">
+<span class="material-symbols-outlined text-[16px] text-[#25d366]">payments</span>
+<span>A 12 meses sin intereses de <strong class="text-[#25d366]">$2,291.66/mes</strong></span>
+</div>
+<div class="text-[13px] text-slate-300">
+              ¡Solo <strong class="text-white">$13,750 MXN</strong> por alumno con certificado B2!
+            </div>
+</div>
+<a class="w-full py-4 px-4 rounded-xl bg-[#0a0d14] text-white hover:bg-black border border-white/30 hover:border-[#25d366] transition-all text-[13px] uppercase tracking-wide flex items-center justify-center gap-2 shadow-xl font-extrabold" href="https://mpago.li/2xoSzTv" rel="noopener noreferrer" target="_blank">
+<span>Pagar Promoción 2x1 ($27,500 MXN)</span>
+<span class="material-symbols-outlined text-[18px] text-[#25d366]">open_in_new</span>
+</a>
+</article>
+<!-- Plan 5: Plan Grupo 3 Personas -->
+<article class="bg-[#111b33] rounded-2xl p-4 shadow-lg border border-surface-border flex flex-col">
+<div class="flex items-start justify-between mb-2">
+<div>
+<span class="text-[11px] text-[#25d366] font-bold uppercase tracking-wider">Plan Amigos / Equipos Corporativos</span>
+<h3 class="text-[18px] text-white font-bold">Plan Grupo - 3 Personas</h3>
+</div>
+<span class="material-symbols-outlined text-[#25d366] text-[24px]">groups</span>
+</div>
+<div class="flex items-baseline gap-1.5 my-1">
+<span class="text-[32px] text-white font-extrabold tracking-tight">$33,300</span>
+<span class="text-[12px] text-slate-400">MXN (3 personas)</span>
+</div>
+<div class="bg-[#0d1527] rounded-xl p-3 mb-4 flex flex-col gap-1 text-white border border-surface-border">
+<div class="text-[12px] text-slate-200">
+              Facilidad a 12 meses sin intereses: <strong class="text-[#25d366]">$2,775/mes</strong>
+</div>
+<div class="text-[12px] text-[#25d366] font-semibold">
+              Equivalente a solo $11,100 MXN por persona
+            </div>
+</div>
+<a class="w-full py-3.5 px-4 rounded-xl bg-[#0a0d14] text-white hover:bg-black border border-white/20 hover:border-[#25d366]/60 transition-all text-[13px] uppercase tracking-wide flex items-center justify-center gap-2 font-bold shadow-lg" href="https://mpago.li/2XQSfJe" rel="noopener noreferrer" target="_blank">
+<span>Pagar Plan 3 Personas ($33,300 MXN)</span>
+<span class="material-symbols-outlined text-[18px] text-[#25d366]">open_in_new</span>
+</a>
+</article>
+</div>
+<!-- ==================== ONLINE PANEL (HIDDEN BY DEFAULT) ==================== -->
+<div class="flex flex-col gap-4 hidden" id="panelOnline">
+<!-- Option Online: Contado Mejor Precio -->
+<article class="bg-[#111b33] rounded-2xl p-4 shadow-xl flex flex-col border-2 border-[#25d366] relative overflow-hidden shadow-[0_0_20px_rgba(37,211,102,0.15)]">
+<div class="absolute top-0 right-0 bg-[#25d366] text-[#080d1b] px-3 py-1 rounded-bl-xl text-[10px] font-extrabold tracking-wider uppercase">
+            SIN CUOTA DE INSCRIPCIÓN
+          </div>
+<div class="mt-2 mb-1">
+<span class="text-[11px] text-[#25d366] font-bold uppercase tracking-wider">El Entrenamiento Más Accesible</span>
+<h3 class="text-[20px] text-white font-extrabold">Plan Online Contado - Mejor Precio</h3>
+</div>
+<div class="flex items-baseline gap-1.5 my-2">
+<span class="text-[34px] text-[#25d366] font-extrabold tracking-tight">$15,300</span>
+<span class="text-[12px] text-slate-400">MXN total</span>
+</div>
+<div class="bg-[#0d1527] rounded-xl p-3 mb-4 flex flex-col gap-1 border border-surface-border">
+<div class="flex items-center gap-1.5 text-white text-[12px] font-bold">
+<span class="material-symbols-outlined text-[16px] text-[#25d366]">credit_card</span>
+<span>A 12 meses sin intereses de <strong class="text-[#25d366]">$1,275/mes</strong></span>
+</div>
+<div class="text-[13px] text-slate-300">
+              Acceso total 24/7 a plataforma y sesiones en vivo con coaches certificados.
+            </div>
+</div>
+<a class="w-full py-4 px-4 rounded-xl bg-[#0a0d14] text-white hover:bg-black border border-white/30 hover:border-[#25d366] transition-all text-[13px] uppercase tracking-wide flex items-center justify-center gap-2 shadow-xl font-extrabold" href="https://mpago.li/2ayzgti" rel="noopener noreferrer" target="_blank">
+<span>Pagar Online Contado ($15,300 MXN)</span>
+<span class="material-symbols-outlined text-[18px] text-[#25d366]">open_in_new</span>
+</a>
+</article>
+<!-- Option Online 2: Inscripción -->
+<article class="bg-[#111b33] rounded-2xl p-4 shadow-lg border border-surface-border flex flex-col">
+<div class="flex items-start justify-between mb-2">
+<div>
+<span class="text-[11px] text-[#25d366] font-bold uppercase tracking-wider">Inscripción Online</span>
+<h3 class="text-[18px] text-white font-bold">Inscripción Estándar</h3>
+</div>
+<span class="material-symbols-outlined text-[#25d366] text-[24px]">wifi</span>
+</div>
+<p class="text-[13px] text-slate-300 mb-3">Activa tu matrícula en campus virtual y asegura tu lugar.</p>
+<div class="flex items-baseline gap-1.5 my-1">
+<span class="text-[32px] text-white font-extrabold tracking-tight">$2,990</span>
+<span class="text-[12px] text-slate-400">MXN pago único</span>
+</div>
+<a class="w-full py-3.5 px-4 mt-3 rounded-xl bg-[#0a0d14] text-white hover:bg-black border border-white/20 hover:border-[#25d366]/60 transition-all text-[13px] uppercase tracking-wide flex items-center justify-center gap-2 font-bold shadow-lg" href="https://mpago.li/2845CGB" rel="noopener noreferrer" target="_blank">
+<span>Pagar Inscripción ($2,990 MXN)</span>
+<span class="material-symbols-outlined text-[18px] text-[#25d366]">open_in_new</span>
+</a>
+</article>
+</div>
+</div>
+<!-- Express Registration & Checkout Form -->
+<section class="px-margin-mobile mb-6">
+<div class="bg-[#111b33] rounded-2xl p-4 shadow-xl border border-surface-border flex flex-col">
+<div class="flex items-center gap-2 mb-1 text-[#25d366]">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+<span class="text-[11px] tracking-widest font-extrabold uppercase">FORMULARIO EXPRESS DE PAGO SEGURO</span>
+</div>
+<h3 class="text-[18px] text-white font-bold mb-1">Complete su Inscripción</h3>
+<p class="text-[13px] text-slate-300 mb-4">Asegure su vacante con precio congelado hoy mismo.</p>
+<!-- Selected Plan Summary Card inside Form -->
+<div class="bg-[#0d1527] rounded-xl p-3.5 mb-4 flex items-center justify-between border border-surface-border">
+<div class="flex flex-col">
+<span class="text-[10px] text-[#25d366] font-bold uppercase tracking-wider">PLAN SELECCIONADO</span>
+<span class="text-[16px] font-bold text-white" id="summaryPlanName">Promoción 2x1 de Contado</span>
+<span class="text-[12px] text-slate-300" id="summaryPlanCost">$27,500 MXN para 2 personas (12 MSI $2,291.66)</span>
+</div>
+<div class="w-9 h-9 rounded-full bg-[#25d366]/20 border border-[#25d366]/40 flex items-center justify-center text-[#25d366]">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+</div>
+<!-- Checkout Form Fields -->
+<form class="flex flex-col gap-3.5" id="checkoutForm" onsubmit="event.preventDefault(); submitPayment();">
+<div>
+<label class="block text-[12px] font-semibold text-white mb-1">Nombre Completo *</label>
+<input class="w-full h-12 px-3.5 rounded-xl bg-[#0d1527] border border-surface-border text-white placeholder:text-slate-500 text-[14px] focus:outline-none focus:border-[#25d366] focus:ring-1 focus:ring-[#25d366] transition-all" placeholder="Ej. Roberto Morales" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div>
+<label class="block text-[12px] font-semibold text-white mb-1">WhatsApp / Teléfono *</label>
+<input class="w-full h-12 px-3.5 rounded-xl bg-[#0d1527] border border-surface-border text-white placeholder:text-slate-500 text-[14px] focus:outline-none focus:border-[#25d366] focus:ring-1 focus:ring-[#25d366] transition-all" placeholder="+52 322 351 2797" required="" type="tel"/>
+</div>
+<div>
+<label class="block text-[12px] font-semibold text-white mb-1">Correo Electrónico *</label>
+<input class="w-full h-12 px-3.5 rounded-xl bg-[#0d1527] border border-surface-border text-white placeholder:text-slate-500 text-[14px] focus:outline-none focus:border-[#25d366] focus:ring-1 focus:ring-[#25d366] transition-all" placeholder="tu@correo.com" required="" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-[12px] font-semibold text-white mb-1.5">Método de Pago Preferido</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="paymentMethod" type="radio" value="card_msi"/>
+<div class="p-2.5 rounded-xl bg-[#0d1527] border border-surface-border peer-checked:bg-[#0a0d14] peer-checked:border-[#25d366] peer-checked:text-[#25d366] text-slate-300 flex flex-col items-center justify-center text-center transition-all h-full shadow-sm">
+<span class="material-symbols-outlined text-[20px] mb-0.5">credit_card</span>
+<span class="text-[11px] font-bold">12 MSI</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="paymentMethod" type="radio" value="debit"/>
+<div class="p-2.5 rounded-xl bg-[#0d1527] border border-surface-border peer-checked:bg-[#0a0d14] peer-checked:border-[#25d366] peer-checked:text-[#25d366] text-slate-300 flex flex-col items-center justify-center text-center transition-all h-full shadow-sm">
+<span class="material-symbols-outlined text-[20px] mb-0.5">account_balance_wallet</span>
+<span class="text-[11px] font-bold">Débito</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="paymentMethod" type="radio" value="spei"/>
+<div class="p-2.5 rounded-xl bg-[#0d1527] border border-surface-border peer-checked:bg-[#0a0d14] peer-checked:border-[#25d366] peer-checked:text-[#25d366] text-slate-300 flex flex-col items-center justify-center text-center transition-all h-full shadow-sm">
+<span class="material-symbols-outlined text-[20px] mb-0.5">swap_horiz</span>
+<span class="text-[11px] font-bold">SPEI</span>
+</div>
+</label>
+</div>
+</div>
+<button class="w-full py-4 px-4 mt-2 rounded-xl bg-[#0a0d14] text-white hover:bg-black border border-white/30 hover:border-[#25d366] transition-all text-[13px] uppercase tracking-wide flex items-center justify-center gap-2 shadow-xl font-extrabold" type="submit">
+<span class="material-symbols-outlined text-[20px] text-[#25d366]">verified_user</span>
+<span>Completar Inscripción Segura</span>
+</button>
+<div class="flex items-center justify-center gap-3 mt-1 text-slate-400 text-[11px]">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-[#25d366]">lock</span> Encriptación 256-Bit</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-[#25d366]">shield</span> Garantía 30 Días</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-[#25d366]">check_circle</span> Cupo Seguro</span>
+</div>
+</form>
+</div>
+</section>
+<!-- Interactive Trust / Social Proof Banner -->
+<section class="px-margin-mobile mb-4">
+<div class="bg-[#111b33] rounded-2xl p-4 flex items-center gap-3.5 border border-surface-border shadow-md">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0 border border-[#25d366]/40 shadow-sm">
+<img alt="Estudiante Active Lingua" class="w-full h-full object-cover" data-alt="Portrait of an energetic young professional female student smiling confidently with modern city background and stylish outfit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-yhSJeQMVb4IqGobKjiuPi3cEq8dkVrzhcihQ23bHQmv8YX4opcXtdmV_L4lGpkl8j9f0yMd7BpAl1ayvf5gbuZ3WY_61meHWXQ3G7LWDOJMpyaJM89YW-lzJ6YAiM4LpPbkDLiaynRBFxjMlnaKyWT4FbHUyhSdGziTs2k3-Rni1qIrMR4aWmOQeY6lo6nKRla_6uNUKuuTnbrzVahYX-4EGuTWtNHaiaCDi0gDhuxNx0QUAJEw"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1 text-[#25d366] mb-0.5">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-[11px] font-bold text-white ml-1">4.9 / 5.0</span>
+</div>
+<p class="text-[13px] text-slate-300 leading-snug">
+            "En 4 meses pasé de trabarme en las juntas a liderar llamadas en inglés con el equipo de Chicago."
+          </p>
+<span class="text-[11px] text-[#25d366] font-bold mt-1">— Mariana R., Marketing Lead</span>
+</div>
+</div>
+</section>
+<!-- Admissions WhatsApp Floating CTA Node -->
+<div class="fixed right-4 bottom-24 z-40">
+<a class="flex items-center gap-2.5 pl-3.5 pr-4 py-2.5 rounded-full bg-[#0a0d14] text-white border-2 border-[#25d366] shadow-[0_4px_20px_rgba(0,0,0,0.6)] hover:bg-black transition-transform active:scale-95 group" href="https://wa.me/523223512797?text=Hola%2C%20tengo%20dudas%20con%20los%20planes%20de%20Active%20Lingua%20Bucer%C3%ADas" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[24px] text-[#25d366]">chat</span>
+<div class="flex flex-col text-left">
+<span class="text-[10px] text-slate-300 leading-none">Bucerías: 322 351 2797</span>
+<span class="text-[12px] font-bold text-white leading-tight">Asesor de Admisiones</span>
+</div>
+</a>
+</div>
+<!-- Interactive JavaScript Logic -->
+<script>
+      function switchModality(mode) {
+        const presencialPanel = document.getElementById('panelPresencial');
+        const onlinePanel = document.getElementById('panelOnline');
+        const tabPres = document.getElementById('tabPresencial');
+        const tabOnl = document.getElementById('tabOnline');
+
+        if (mode === 'presencial') {
+          presencialPanel.classList.remove('hidden');
+          onlinePanel.classList.add('hidden');
+          tabPres.classList.add('bg-[#111b33]', 'text-white', 'border', 'border-[#25d366]/30', 'shadow-sm');
+          tabPres.classList.remove('text-slate-400');
+          tabPres.querySelector('span.material-symbols-outlined').classList.add('text-[#25d366]');
+          tabOnl.classList.remove('bg-[#111b33]', 'text-white', 'border', 'border-[#25d366]/30', 'shadow-sm');
+          tabOnl.classList.add('text-slate-400');
+          tabOnl.querySelector('span.material-symbols-outlined').classList.remove('text-[#25d366]');
+        } else {
+          presencialPanel.classList.add('hidden');
+          onlinePanel.classList.remove('hidden');
+          tabOnl.classList.add('bg-[#111b33]', 'text-white', 'border', 'border-[#25d366]/30', 'shadow-sm');
+          tabOnl.classList.remove('text-slate-400');
+          tabOnl.querySelector('span.material-symbols-outlined').classList.add('text-[#25d366]');
+          tabPres.classList.remove('bg-[#111b33]', 'text-white', 'border', 'border-[#25d366]/30', 'shadow-sm');
+          tabPres.classList.add('text-slate-400');
+          tabPres.querySelector('span.material-symbols-outlined').classList.remove('text-[#25d366]');
+        }
+      }
+
+      function submitPayment() {
+        const plan = document.getElementById('summaryPlanName').textContent;
+        alert('¡Excelente elección! Redirigiendo a pasarela segura para activar tu plan: ' + plan);
+      }
+    </script>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-50 pb-safe bg-[#080d1b]/95 backdrop-blur-xl border-t border-surface-border/70 shadow-[0_-4px_16px_rgba(0,0,0,0.5)]">
+<div class="w-full py-1.5 px-margin-mobile bg-[#0d1527] border-b border-surface-border/50 flex items-center justify-center gap-3">
+<div class="flex items-center gap-1 text-[#25d366]">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+<span class="text-[10px] font-bold tracking-wider">GARANTÍA 100% SATISFACCIÓN</span>
+</div>
+<span class="text-slate-500 text-[10px]">•</span>
+<div class="flex items-center gap-1 text-slate-300">
+<span class="material-symbols-outlined text-[14px] text-[#25d366]">support_agent</span>
+<span class="text-[10px] font-bold tracking-wider">SOPORTE 24/7</span>
+</div>
+</div>
+<div class="h-16 px-margin-mobile flex justify-around items-center">
+<a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-2 transition-colors text-[#25d366] font-bold" data-path="entrenamientos-y-planes" href="#">
+<span class="material-symbols-outlined text-[22px]">fitness_center</span>
+<span class="text-[11px] mt-0.5">Planes</span>
+</a>
+<a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-2 text-slate-400 hover:text-white transition-colors" data-path="modalidades-presencial-online" href="#" onclick="switchModality('online'); return false;">
+<span class="material-symbols-outlined text-[22px]">swap_horiz</span>
+<span class="text-[11px] mt-0.5">Modalidad</span>
+</a>
+<a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-2 text-slate-400 hover:text-white transition-colors" data-path="garantia-y-metodologia" href="#">
+<span class="material-symbols-outlined text-[22px]">military_tech</span>
+<span class="text-[11px] mt-0.5">Método</span>
+</a>
+<a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-2 text-slate-400 hover:text-white transition-colors" data-path="mi-perfil-training" href="#">
+<span class="material-symbols-outlined text-[22px]">account_circle</span>
+<span class="text-[11px] mt-0.5">Perfil</span>
+</a>
+</div>
+</nav>
+</body></html>

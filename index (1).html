@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070b14">
+  <meta name="description" content="Active Lingua - Clases de inglés conversacionales, prácticas y sin exámenes. Campus Bucerías, Nayarit y modalidad Online. Cupón BUCERIAS.">
+  <title>Active Lingua | Inglés Práctico y Conversacional - Bucerías & Online</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #070b14;
+      --card-bg: #0d1527;
+      --card-border: #1a2744;
+      --text-main: #ffffff;
+      --text-muted: #94a3b8;
+      --green-brand: #00e676;
+      --green-glow: rgba(0, 230, 118, 0.25);
+      --green-light: #69f0ae;
+      --btn-black: #050811;
+      --btn-border: #223254;
+      --badge-bg: rgba(0, 230, 118, 0.12);
+      --radius: 18px;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 90px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 16px 20px;
+    }
+
+    /* TOP BAR */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 1.05rem;
+      letter-spacing: -0.3px;
+    }
+    .brand-logo span.dot {
+      width: 8px;
+      height: 8px;
+      background: var(--green-brand);
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 10px var(--green-brand);
+    }
+    .brand-sub {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      display: block;
+      margin-top: -2px;
+    }
+    .top-wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: rgba(0, 230, 118, 0.12);
+      color: var(--green-brand);
+      border: 1px solid rgba(0, 230, 118, 0.35);
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+    .top-wa-btn:hover {
+      background: var(--green-brand);
+      color: #050811;
+    }
+
+    /* HERO GANCHO */
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--badge-bg);
+      border: 1px solid rgba(0, 230, 118, 0.3);
+      color: var(--green-brand);
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 20px;
+      margin-bottom: 12px;
+    }
+    .coupon-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px dashed rgba(255, 255, 255, 0.2);
+      color: #ffd166;
+      font-size: 0.74rem;
+      font-weight: 700;
+      margin-left: 6px;
+    }
+
+    .hero-title {
+      font-size: 2.25rem;
+      line-height: 1.12;
+      font-weight: 900;
+      letter-spacing: -1px;
+      color: #ffffff;
+      margin-bottom: 14px;
+    }
+    .hero-title span {
+      color: var(--green-brand);
+      text-shadow: 0 0 20px rgba(0, 230, 118, 0.2);
+    }
+
+    .hero-box {
+      background: linear-gradient(180deg, #0e172c 0%, #090e1c 100%);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin-bottom: 18px;
+    }
+    .hero-desc {
+      font-size: 0.95rem;
+      color: #cbd5e1;
+      line-height: 1.55;
+    }
+    .hero-desc strong {
+      color: #ffffff;
+      font-weight: 800;
+    }
+
+    .feature-pills {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      margin: 14px 0 6px;
+    }
+    .feature-pill {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #e2e8f0;
+    }
+    .feature-pill svg {
+      width: 17px;
+      height: 17px;
+      color: var(--green-brand);
+      flex-shrink: 0;
+    }
+
+    .schedule-banner {
+      background: rgba(0, 230, 118, 0.08);
+      border: 1px solid rgba(0, 230, 118, 0.2);
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 0.82rem;
+      color: #a7f3d0;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    /* STATS ROW */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 18px 0 24px;
+    }
+    .stat-card {
+      background: #0d1527;
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 14px 8px;
+      text-align: center;
+    }
+    .stat-number {
+      font-size: 1.55rem;
+      font-weight: 900;
+      color: var(--green-brand);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* BANNER DESTACADO BUCERIAS */
+    .promo-highlight-card {
+      border-radius: var(--radius);
+      border: 1px solid var(--card-border);
+      margin-bottom: 26px;
+      background: radial-gradient(circle at top right, #163624 0%, #0d1a33 50%, #080e1c 100%);
+      padding: 24px 20px;
+      text-align: center;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+      position: relative;
+      overflow: hidden;
+    }
+    .promo-highlight-card::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 140px;
+      height: 140px;
+      background: var(--green-brand);
+      opacity: 0.15;
+      filter: blur(40px);
+      border-radius: 50%;
+    }
+    .iggie-icon {
+      font-size: 3.5rem;
+      margin-bottom: 8px;
+      display: inline-block;
+      filter: drop-shadow(0 4px 12px rgba(0,230,118,0.3));
+    }
+    .highlight-pill {
+      display: inline-block;
+      background: #ffd166;
+      color: #0b1120;
+      font-size: 0.78rem;
+      font-weight: 900;
+      padding: 4px 12px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    /* SECTION HEAD */
+    .section-title {
+      font-size: 1.45rem;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+      margin-bottom: 4px;
+    }
+    .section-sub {
+      color: var(--text-muted);
+      font-size: 0.86rem;
+      margin-bottom: 16px;
+    }
+
+    /* PRICING CARDS */
+    .plans-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .plan-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 20px;
+      position: relative;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+    .plan-card.featured {
+      border: 2px solid var(--green-brand);
+      background: linear-gradient(180deg, #101c36 0%, #0a1122 100%);
+      box-shadow: 0 10px 30px var(--green-glow);
+    }
+    .featured-badge {
+      position: absolute;
+      top: -11px;
+      right: 18px;
+      background: var(--green-brand);
+      color: #050811;
+      font-size: 0.7rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      box-shadow: 0 4px 12px rgba(0, 230, 118, 0.4);
+    }
+
+    .plan-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--green-light);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .plan-name {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+    .plan-desc {
+      font-size: 0.83rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 14px;
+    }
+
+    .plan-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .plan-price {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .plan-card.featured .plan-price {
+      color: var(--green-brand);
+    }
+    .plan-currency {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .plan-msi {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 5px 10px;
+      font-size: 0.77rem;
+      font-weight: 700;
+      color: #94a3b8;
+      margin-bottom: 16px;
+    }
+    .plan-msi span.highlight {
+      color: var(--green-brand);
+      font-weight: 800;
+    }
+
+    /* PAYMENT BUTTON (BLACK WITH WHITE TEXT & GREEN HOVER) */
+    .btn-pay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      background: var(--btn-black);
+      color: #ffffff;
+      border: 1px solid var(--btn-border);
+      border-radius: 12px;
+      padding: 14px 18px;
+      font-size: 0.92rem;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+    }
+    .btn-pay:hover {
+      background: #0d1527;
+      border-color: var(--green-brand);
+      color: var(--green-brand);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px var(--green-glow);
+    }
+    .btn-pay svg {
+      width: 16px;
+      height: 16px;
+      stroke-width: 2.5;
+    }
+
+    /* DIRECT CONTACT BANNER */
+    .contact-card {
+      background: linear-gradient(135deg, #102142 0%, #0c162c 100%);
+      border: 1px solid #233a6b;
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .contact-card h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+    .contact-card p {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      margin-bottom: 14px;
+    }
+    .btn-whatsapp-big {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      background: #25d366;
+      color: #031e0f;
+      padding: 14px;
+      border-radius: 12px;
+      font-weight: 900;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+    }
+    .btn-whatsapp-big:hover {
+      background: #22bf5b;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 24px 0 30px;
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+    footer a {
+      color: var(--green-brand);
+      font-weight: 700;
+    }
+    footer p {
+      margin-bottom: 6px;
+    }
+
+    /* FLOATING BOTTOM CTA (MOBILE) */
+    .floating-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(7, 11, 20, 0.95);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 10px 16px;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+    }
+    .floating-inner {
+      width: 100%;
+      max-width: 520px;
+      display: flex;
+      gap: 10px;
+    }
+    .floating-btn-wa {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #25d366;
+      color: #021a0c;
+      padding: 12px 14px;
+      border-radius: 12px;
+      font-size: 0.88rem;
+      font-weight: 800;
+    }
+    .floating-btn-pay {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: var(--btn-black);
+      color: #ffffff;
+      border: 1px solid var(--btn-border);
+      padding: 12px 14px;
+      border-radius: 12px;
+      font-size: 0.88rem;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- TOP HEADER -->
+    <header class="top-bar">
+      <div class="brand-logo">
+        <span class="dot"></span>
+        <div>
+          ACTIVE LINGUA
+          <span class="brand-sub">CAMPUS BUCERÍAS • NAYARIT</span>
+        </div>
+      </div>
+      <a class="top-wa-btn" href="https://wa.me/523223512797?text=QUIERO%20SER%20BILING%C3%9CE%20-%20Cup%C3%B3n%3A%20BUCERIAS" target="_blank" rel="noopener">
+        <span>💬</span> WhatsApp
+      </a>
+    </header>
+
+    <!-- GANCHO CONVERSACIONAL -->
+    <div style="margin-top: 10px;">
+      <span class="hero-badge">✦ Active Lingua Bucerías</span>
+      <span class="coupon-badge">🏷️ Cupón: BUCERIAS</span>
+    </div>
+
+    <h1 class="hero-title">
+      ¿Decidido a <span>aprender inglés?</span>
+    </h1>
+
+    <div class="hero-box">
+      <p class="hero-desc">
+        En <strong>Active Lingua</strong> es conversacional, práctico y diferente. <strong>Sin tareas, sin exámenes, 100% práctica</strong>. Tú escoges tu horario y puede ser presencial, online o in-company.
+      </p>
+
+      <div class="feature-pills">
+        <div class="feature-pill">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          Sin tareas ni exámenes
+        </div>
+        <div class="feature-pill">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          100% práctica conversacional
+        </div>
+        <div class="feature-pill">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Tú eliges tu horario (9:00 am a 9:00 pm)
+        </div>
+        <div class="feature-pill">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          Presencial • Online • In-Company
+        </div>
+      </div>
+
+      <div class="schedule-banner">
+        <span>🕒</span> Horario flexible de lunes a sábado de 9:00 am a 9:00 pm
+      </div>
+    </div>
+
+    <!-- METRICS -->
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-number">4m</div>
+        <div class="stat-label">Habla Fluido</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">B2</div>
+        <div class="stat-label">Certificado Oficial</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">2×1</div>
+        <div class="stat-label">Inscripción</div>
+      </div>
+    </div>
+
+    <!-- BANNER DESTACADO BUCERIAS CON IGGIE -->
+    <div class="promo-highlight-card">
+      <span class="iggie-icon">🦎</span>
+      <div><span class="highlight-pill">¡2×1 en la inscripción!</span></div>
+      <h3 style="font-size:1.35rem; font-weight:900; color:#fff; margin-bottom:4px;">¡Aprende en Bucerías, Nayarit!</h3>
+      <p style="font-size:0.86rem; color:#cbd5e1; max-width:340px; margin:0 auto 12px;">En 4 meses hablarás inglés fluido con certificación oficial B2 en 12 meses. Cupo limitado por grupo.</p>
+      <div style="font-size:0.8rem; font-weight:700; color:var(--green-light);">Horario flexible: 9:00 am a 9:00 pm • Tel. 322 351 2797</div>
+    </div>
+
+    <!-- CATALOGO DE PRECIOS -->
+    <div id="planes-section">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom: 8px;">
+        <h2 class="section-title">Planes y Precios Oficiales</h2>
+        <span style="font-size: 0.75rem; background: rgba(0,230,118,0.15); color: var(--green-brand); font-weight:800; padding:4px 8px; border-radius:6px;">12 MSI</span>
+      </div>
+      <p class="section-sub">Selecciona tu modalidad preferida y asegura tu lugar con enlace directo y seguro de Mercado Pago.</p>
+    </div>
+
+    <div class="plans-list">
+      
+      <!-- PLAN 1: INSCRIPCION -->
+      <article class="plan-card">
+        <span class="plan-tag">Paso Inicial Bucerías • Cupón Activo</span>
+        <h3 class="plan-name">Inscripción Única</h3>
+        <p class="plan-desc">Asegura tu vacante y material oficial en campus físico o modalidad híbrida.</p>
+        <div class="plan-price-row">
+          <div class="plan-price">$2,990</div>
+          <div class="plan-currency">MXN pago único</div>
+        </div>
+        <div class="plan-msi">
+          <span>💳</span> Hasta 12 Meses Sin Intereses disponibles
+        </div>
+        <a class="btn-pay" href="https://mpago.li/2845CGB" target="_blank" rel="noopener">
+          PAGAR INSCRIPCIÓN ($2,990 MXN)
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </article>
+
+      <!-- PLAN 2: CONTADO 1 PERSONA -->
+      <article class="plan-card">
+        <div style="display:flex; justify-content:space-between;">
+          <span class="plan-tag">Pago Único • Cero Cargos Extra</span>
+          <span style="font-size:0.72rem; color:var(--green-brand); font-weight:800;">Ahorra $3,310</span>
+        </div>
+        <h3 class="plan-name">Contado – 1 Persona Presencial</h3>
+        <p class="plan-desc">Acceso total al ciclo completo intensivo con certificación B2 oficial.</p>
+        <div class="plan-price-row">
+          <div class="plan-price">$21,390</div>
+          <div class="plan-currency">MXN total</div>
+        </div>
+        <div class="plan-msi">
+          <span>💳</span> O a 12 meses sin intereses de <span class="highlight">$1,782.50/mes</span>
+        </div>
+        <a class="btn-pay" href="https://mpago.li/2cjGESr" target="_blank" rel="noopener">
+          PAGAR CONTADO 1 PERSONA ($21,390 MXN)
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </article>
+
+      <!-- PLAN 3: PROMO ESTRELLA 2X1 (FEATURED) -->
+      <article class="plan-card featured">
+        <div class="featured-badge">★ PROMO ESTRELLA • 2×1</div>
+        <span class="plan-tag">Ahorro del 35% por alumno • Bucerías</span>
+        <h3 class="plan-name">Promoción 2×1 de Contado</h3>
+        <p class="plan-desc">Entrena con quien quieras. Inscripción y ciclo completo para 2 personas.</p>
+        <div class="plan-price-row">
+          <div class="plan-price">$27,500</div>
+          <div class="plan-currency">MXN (2 alumnos)</div>
+        </div>
+        <div class="plan-msi">
+          <span>💳</span> 12 MSI de <span class="highlight">$2,291.66/mes</span> • Solo $13,750 c/u
+        </div>
+        <a class="btn-pay" href="https://mpago.li/2xoSzTv" target="_blank" rel="noopener" style="background:#000000; border-color:#00e676;">
+          PAGAR PROMOCIÓN 2×1 ($27,500 MXN)
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </article>
+
+      <!-- PLAN 4: GRUPO 3 PERSONAS -->
+      <article class="plan-card">
+        <span class="plan-tag">Plan Amigos / Equipos Corporativos</span>
+        <h3 class="plan-name">Plan Grupo – 3 Personas</h3>
+        <p class="plan-desc">Capacitación completa para tres integrantes con seguimiento intensivo de fluidez.</p>
+        <div class="plan-price-row">
+          <div class="plan-price">$33,300</div>
+          <div class="plan-currency">MXN (3 personas)</div>
+        </div>
+        <div class="plan-msi">
+          <span>💳</span> 12 MSI de <span class="highlight">$2,775/mes</span> • Solo $11,100 c/u
+        </div>
+        <a class="btn-pay" href="https://mpago.li/2XQSfJe" target="_blank" rel="noopener">
+          PAGAR PLAN 3 PERSONAS ($33,300 MXN)
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </article>
+
+      <!-- PLAN 5: ONLINE CONTADO -->
+      <article class="plan-card">
+        <span class="plan-tag">Modalidad 100% Remota en Vivo</span>
+        <h3 class="plan-name">Plan Online – Contado</h3>
+        <p class="plan-desc">Clases en vivo vía videollamada con grupos reducidos y práctica conversacional guiada.</p>
+        <div class="plan-price-row">
+          <div class="plan-price">$15,300</div>
+          <div class="plan-currency">MXN total</div>
+        </div>
+        <div class="plan-msi">
+          <span>💳</span> O a 12 meses sin intereses de <span class="highlight">$1,275.00/mes</span>
+        </div>
+        <a class="btn-pay" href="https://mpago.li/2ayzgti" target="_blank" rel="noopener">
+          PAGAR PLAN ONLINE ($15,300 MXN)
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </article>
+
+    </div>
+
+    <!-- CONTACTO DIRECTO WHATSAPP -->
+    <div class="contact-card">
+      <h3>¿Tienes dudas sobre los pagos o tu cupón?</h3>
+      <p>Chatea directamente con nuestro asesor en Bucerías al <strong>+52 322 351 2797</strong>.</p>
+      <a class="btn-whatsapp-big" href="https://wa.me/523223512797?text=Hola,%20tengo%20dudas%20sobre%20mi%20inscripci%C3%B3n%20en%20Active%20Lingua.%20Cup%C3%B3n:%20BUCERIAS" target="_blank" rel="noopener">
+        <span>💬</span> Hablar con Asesor de Admisiones
+      </a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p><strong>Active Lingua • Dynamic English Program</strong></p>
+      <p>Campus Bucerías, Bahía de Banderas, Nayarit • Tel: +52 322 351 2797</p>
+      <p>Horario: Lunes a Sábado de 9:00 am a 9:00 pm</p>
+      <p style="margin-top: 10px; opacity: 0.6;">© 2026 Active Lingua. Todos los derechos reservados. Pagos procesados de forma segura mediante Mercado Pago.</p>
+    </footer>
+
+  </div>
+
+  <!-- FLOATING CTA FOR MOBILE -->
+  <div class="floating-cta">
+    <div class="floating-inner">
+      <a class="floating-btn-wa" href="https://wa.me/523223512797?text=QUIERO%20SER%20BILING%C3%9CE%20-%20Cup%C3%B3n%3A%20BUCERIAS" target="_blank" rel="noopener">
+        <span>💬</span> WhatsApp
+      </a>
+      <a class="floating-btn-pay" href="#planes-section">
+        <span>💳</span> Ver Planes
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
