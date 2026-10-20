@@ -1,6 +1,4 @@
-# Activelingua
-
-Me puedes generar algo así para active linguahttps://expert-connect-355.preview.emergentagent.com/ adicionar un panel de inscripcion paque aquí: Clases presenciales : inscripción 2990 más 12 pagos de 1775 Contado una persona 21399 a 12 meses sin intereses. Promoción 2x1 en contado de $27500 a 12 meses s/in. Tres personas x33300 a 12 meses sin intereses.
+ active linguahttps://expert-connect-355.preview.emergentagent.com/ adicionar un panel de inscripcion paque aquí: Clases presenciales : inscripción 2990 más 12 pagos de 1775 Contado una persona 21399 a 12 meses sin intereses. Promoción 2x1 en contado de $27500 a 12 meses s/in. Tres personas x33300 a 12 meses sin intereses.
 
 Clases Online. Inscripción $2990 12 colegiaturas de 1375 .
 
